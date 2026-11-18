@@ -1,1 +1,267 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Зима без світла — чек-лист підготовки до блекаутів</title>
+  <meta name="description" content="Практичний чек-лист на 72 години для підготовки до відключень світла: освітлення, зв'язок, вода, їжа, тепло, документи. Калькулятор автономності павербанка та зарядної станції.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f7fa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#11161d" media="(prefers-color-scheme: dark)">
 
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:site_name" content="Зима без світла">
+  <meta property="og:title" content="Зима без світла — чек-лист підготовки до блекаутів">
+  <meta property="og:description" content="Чек-лист на 72 години, калькулятор автономності та відповіді на часті питання. Спокійно й по ділу.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%95%AF%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до основного змісту</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Зима без світла — на початок сторінки">
+        <span aria-hidden="true">🕯️</span> Зима без світла
+      </a>
+      <nav aria-label="Основна навігація">
+        <ul class="nav-list">
+          <li><a href="#checklist">Чек-лист</a></li>
+          <li><a href="#calculator">Калькулятор</a></li>
+          <li><a href="#faq">Питання</a></li>
+          <li><a href="#links">Посилання</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Зима без світла</h1>
+        <p class="hero-lead">
+          Спокійна підготовка до відключень електроенергії. Короткий чек-лист
+          на 72 години, калькулятор автономності та відповіді на поширені питання.
+        </p>
+        <a class="button" href="#checklist">Перейти до чек-листа</a>
+      </div>
+    </section>
+
+    <section class="section" id="checklist" aria-labelledby="checklist-title">
+      <div class="container">
+        <h2 id="checklist-title">Чек-лист на 72 години</h2>
+        <p class="section-lead">
+          Відмічайте те, що вже готово. Позначки зберігаються лише у вашому браузері
+          на цьому пристрої.
+        </p>
+
+        <div class="progress" aria-live="polite">
+          <p class="progress-text" id="progress-text">Готово: 0 з 0</p>
+          <div class="progress-bar" aria-hidden="true"><span id="progress-fill"></span></div>
+        </div>
+
+        <div class="checklist-grid">
+          <fieldset class="card">
+            <legend><span aria-hidden="true">🔦</span> Світло</legend>
+            <ul class="check-list">
+              <li><label><input type="checkbox" data-key="light-1"> Ліхтарик для кожного члена родини</label></li>
+              <li><label><input type="checkbox" data-key="light-2"> Налобний ліхтарик, щоб руки були вільні</label></li>
+              <li><label><input type="checkbox" data-key="light-3"> Запасні батарейки потрібних типорозмірів</label></li>
+              <li><label><input type="checkbox" data-key="light-4"> Акумуляторна LED-лампа або світлодіодна стрічка з USB</label></li>
+              <li><label><input type="checkbox" data-key="light-5"> Свічки та сірники — лише як запасний варіант, під наглядом</label></li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="card">
+            <legend><span aria-hidden="true">📱</span> Зв'язок</legend>
+            <ul class="check-list">
+              <li><label><input type="checkbox" data-key="comm-1"> Заряджений павербанк або зарядна станція</label></li>
+              <li><label><input type="checkbox" data-key="comm-2"> Кабелі та адаптери до всіх своїх пристроїв</label></li>
+              <li><label><input type="checkbox" data-key="comm-3"> Батарейний або заводний радіоприймач</label></li>
+              <li><label><input type="checkbox" data-key="comm-4"> Важливі номери записані на папері</label></li>
+              <li><label><input type="checkbox" data-key="comm-5"> Домовленість з рідними, як і де зв'язатися без мобільного</label></li>
+              <li><label><input type="checkbox" data-key="comm-6"> Офлайн-карти міста завантажені в телефон</label></li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="card">
+            <legend><span aria-hidden="true">💧</span> Вода</legend>
+            <ul class="check-list">
+              <li><label><input type="checkbox" data-key="water-1"> Питна вода: орієнтовно 3 л на людину на добу</label></li>
+              <li><label><input type="checkbox" data-key="water-2"> Технічна вода для гігієни та змиву</label></li>
+              <li><label><input type="checkbox" data-key="water-3"> Ємності з кришками для набору води</label></li>
+              <li><label><input type="checkbox" data-key="water-4"> Вологі серветки та антисептик для рук</label></li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="card">
+            <legend><span aria-hidden="true">🥫</span> Їжа</legend>
+            <ul class="check-list">
+              <li><label><input type="checkbox" data-key="food-1"> Продукти, що не потребують готування, на 3 дні</label></li>
+              <li><label><input type="checkbox" data-key="food-2"> Консерви та ручна відкривачка</label></li>
+              <li><label><input type="checkbox" data-key="food-3"> Туристичний пальник із запасом газу (лише для провітрюваних місць)</label></li>
+              <li><label><input type="checkbox" data-key="food-4"> Термос для гарячої води чи чаю</label></li>
+              <li><label><input type="checkbox" data-key="food-5"> Запас їжі для домашніх тварин</label></li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="card">
+            <legend><span aria-hidden="true">🧣</span> Тепло</legend>
+            <ul class="check-list">
+              <li><label><input type="checkbox" data-key="heat-1"> Теплий одяг шарами, шапки, вовняні шкарпетки</label></li>
+              <li><label><input type="checkbox" data-key="heat-2"> Ковдри або спальні мішки</label></li>
+              <li><label><input type="checkbox" data-key="heat-3"> Утеплені вікна та двері, щільні штори</label></li>
+              <li><label><input type="checkbox" data-key="heat-4"> Хімічні грілки або грілка для гарячої води</label></li>
+              <li><label><input type="checkbox" data-key="heat-5"> Обрана одна кімната, яку найлегше зберегти теплою</label></li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="card">
+            <legend><span aria-hidden="true">📄</span> Документи та гроші</legend>
+            <ul class="check-list">
+              <li><label><input type="checkbox" data-key="docs-1"> Копії документів у водонепроникному пакеті</label></li>
+              <li><label><input type="checkbox" data-key="docs-2"> Готівка дрібними купюрами</label></li>
+              <li><label><input type="checkbox" data-key="docs-3"> Домашня аптечка та запас ліків, які приймаєте постійно</label></li>
+              <li><label><input type="checkbox" data-key="docs-4"> Запасні ключі від дому та авто</label></li>
+              <li><label><input type="checkbox" data-key="docs-5"> Тривожна валіза зібрана і стоїть біля виходу</label></li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <button type="button" class="button button-secondary" id="reset-checklist">
+          Скинути всі позначки
+        </button>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="calculator" aria-labelledby="calculator-title">
+      <div class="container">
+        <h2 id="calculator-title">Калькулятор автономності</h2>
+        <p class="section-lead">
+          Оцініть, скільки годин пристрій пропрацює від павербанка чи зарядної станції.
+          Результат орієнтовний: реальний час залежить від стану батареї, температури та навантаження.
+        </p>
+
+        <form class="card calc-form" id="calc-form" novalidate>
+          <div class="field">
+            <label for="power">Потужність пристрою, Вт</label>
+            <input type="number" id="power" name="power" inputmode="decimal" min="0.1" step="any" placeholder="наприклад, 10" required aria-describedby="power-hint">
+            <p class="hint" id="power-hint">Зазвичай вказана на корпусі або блоці живлення. Wi-Fi роутер — близько 10 Вт, ноутбук — 45–65 Вт.</p>
+          </div>
+
+          <div class="field">
+            <label for="capacity">Ємність акумулятора, Вт·год</label>
+            <input type="number" id="capacity" name="capacity" inputmode="decimal" min="1" step="any" placeholder="наприклад, 74" required aria-describedby="capacity-hint">
+            <p class="hint" id="capacity-hint">Для павербанка: мА·год × 3,7 ÷ 1000. Наприклад, 20 000 мА·год ≈ 74 Вт·год.</p>
+          </div>
+
+          <div class="field field-check">
+            <label>
+              <input type="checkbox" id="losses" checked>
+              Враховувати втрати на перетворення (~15%)
+            </label>
+          </div>
+
+          <button type="submit" class="button">Розрахувати</button>
+
+          <output class="calc-result" id="calc-result" for="power capacity losses" aria-live="polite"></output>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title">Часті питання</h2>
+
+        <div class="faq-list">
+          <details>
+            <summary>З чого почати, якщо нічого ще не готово?</summary>
+            <p>
+              Почніть із базового: ліхтарик, заряджений павербанк, запас питної води та
+              продуктів на кілька днів. Далі рухайтеся чек-листом поступово — не обов'язково
+              купувати все одразу.
+            </p>
+          </details>
+
+          <details>
+            <summary>Чи безпечно обігрівати квартиру газовою плитою?</summary>
+            <p>
+              Ні. Газова плита не призначена для обігріву: зростає ризик отруєння чадним
+              газом і пожежі. Краще утеплитися, зібратися в одній кімнаті та
+              одягатися шарами.
+            </p>
+          </details>
+
+          <details>
+            <summary>Як довше зберегти заряд телефона?</summary>
+            <p>
+              Увімкніть режим енергозбереження, зменште яскравість, вимкніть непотрібні
+              застосунки, геолокацію та Bluetooth. У зоні слабкого сигналу телефон витрачає
+              більше енергії на пошук мережі.
+            </p>
+          </details>
+
+          <details>
+            <summary>Що робити з продуктами в холодильнику?</summary>
+            <p>
+              Відкривайте його якомога рідше — так холод тримається довше. Заздалегідь
+              заморозьте пляшки з водою: вони допоможуть підтримувати низьку температуру.
+              Продукти, що зіпсувалися, не вживайте.
+            </p>
+          </details>
+
+          <details>
+            <summary>Чи можна користуватися генератором вдома?</summary>
+            <p>
+              Генератор з двигуном використовують лише на вулиці, подалі від вікон і
+              дверей. У приміщенні, на балконі чи в під'їзді він може спричинити отруєння
+              чадним газом.
+            </p>
+          </details>
+
+          <details>
+            <summary>Що зробити, коли світло повертається?</summary>
+            <p>
+              Не вмикайте всі потужні прилади одночасно, щоб уникнути перевантаження мережі.
+              Насамперед поставте на заряд павербанки та ліхтарики — наступне відключення
+              може бути незабаром.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="links" aria-labelledby="links-title">
+      <div class="container">
+        <h2 id="links-title">Корисні посилання</h2>
+        <p class="section-lead">Перевіряйте інформацію в офіційних джерелах.</p>
+
+        <ul class="links-list">
+          <li class="card">
+            <h3><a href="https://ua.energy/" target="_blank" rel="noopener noreferrer">Укренерго<span class="visually-hidden"> (відкриється в новій вкладці)</span></a></h3>
+            <p>Національний оператор енергосистеми: новини про стан енергосистеми та графіки відключень.</p>
+          </li>
+          <li class="card">
+            <h3><a href="https://dsns.gov.ua/" target="_blank" rel="noopener noreferrer">ДСНС України<span class="visually-hidden"> (відкриється в новій вкладці)</span></a></h3>
+            <p>Державна служба з надзвичайних ситуацій: поради з безпеки. Екстрений виклик — 101.</p>
+          </li>
+          <li class="card">
+            <h3><a href="https://ukc.gov.ua/" target="_blank" rel="noopener noreferrer">Урядова гаряча лінія 1545<span class="visually-hidden"> (відкриється в новій вкладці)</span></a></h3>
+            <p>Звернення до органів влади. Телефон: <a href="tel:1545">1545</a>.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>«Зима без світла» — довідковий чек-лист. Він не замінює офіційних рекомендацій.</p>
+      <p><a href="#top">Нагору ↑</a></p>
+    </div>
+  </footer>
+</body>
+</html>
